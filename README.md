@@ -1,6 +1,6 @@
 # Pathfinding Performance Benchmarks
 
-## Performance Results
+## Results
 
 | N             | Elapsed Time  | Memory Usage   |
 |---------------|---------------|----------------|
