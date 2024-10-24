@@ -1,0 +1,21 @@
+Name: Vansh Joshi
+Date: 10/23/2025
+
+1. I worked on the whole project myself, I was not partnered with anyone for the project
+
+2. The map is represented as a graph where each tile becomes a vertex containing its
+coordinates, distance from start, and connections to neighboring tiles. The graph is
+constructed by creating a graph_Node object for each tile position and establishing edges to
+valid adjacent tiles in the four directions (up, down, left, right). Each node stores its neighbors
+in a map using a single integer key to represent the neighbor's position, along with the neighbor's
+tile type as the value. The edge weights in this graph are determined by the point values associated
+with each tile type, where the weight of moving from one node to another is equal to the point value of the source tile.
+
+3. The time complexity of this implementation is O(n log n) where n represents the number of vertices (V). The multimap
+maintains elements in sorted order, providing log n operations for insertions. For each vertex, we perform insertion
+operations into the multimap when updating distances (log n) and we extract the minimum element (also log n). The combination
+of these operations for each vertex results in O(n log n) overall complexity.
+
+4. I think the implementation's time complexity is actually O(N log N) where N is the total number of map tiles (N = map_row × map_col).
+This makes the implementation reasonably efficient and suitable for most practical map sizes. The memory usage also shows a consistent 
+linear growth pattern
